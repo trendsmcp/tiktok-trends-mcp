@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tiktok-trends-mcp"
+version = "1.0.0"
+description = "TikTok hashtag trends as an MCP tool. Plug into Claude, Cursor, or any MCP-compatible AI host. Weekly series, growth percentages, and live TikTok trending hashtags. Powered by trendsmcp.ai"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.8"
+authors = [{ name = "Trends MCP", email = "hello@trendsmcp.ai" }]
+keywords = [
+  "tiktok",
+  "tiktok-mcp",
+  "mcp",
+  "model-context-protocol",
+  "tiktok-trends",
+  "ai-tools",
+  "claude",
+  "cursor",
+  "social-media",
+  "trendsmcp"
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = ["trendsmcp>=1.0.0"]
+
+[project.urls]
+Homepage = "https://trendsmcp.ai"
+Documentation = "https://trendsmcp.ai/docs"
+Repository = "https://github.com/trendsmcp/tiktok-trends-mcp"
+"Get API Key" = "https://trendsmcp.ai"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tiktok_trends_mcp"]
+
+
